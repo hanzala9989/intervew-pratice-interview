@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="container__title">
+        <span class="title">Count Timer</span>
+    </div>
+    <div class="container__labels">
+        <div class="time__hour">Hour</div>
+        <div class="time__min">Minute</div>
+        <div class="time__sec">Second</div>
+    </div>
+    <div class="container__timer__input">
+        <input type="number" name="hour" [(ngModel)]="hour" oninput="this.value = this.value.slice(0,this.maxLength)"
+            id="hour" maxlength="2" class="timer__hour" placeholder="00">
+        <input type="number" name="minute" [(ngModel)]="minute"
+            oninput="this.value = this.value.slice(0,this.maxLength)" id="hour" maxlength="2" class="timer__minute"
+            placeholder="00">
+        <input type="number" name="second" [(ngModel)]="second"
+            oninput="this.value = this.value.slice(0,this.maxLength)" id="hour" maxlength="2" class="timer__second"
+            placeholder="00">
+    </div>
+
+    <div class="container__btn">
+        <button type="button" class="btn__hour" (click)="startTimer()">{{!stopflag ? 'Start' : 'Continue'}}</button>
+        <button type="button" class="btn__minute" (click)="stopTimer()">Stop</button>
+        <button type="button" class="btn__second" (click)="resetTimer()">Reset</button>
+    </div>
+
+</div>
