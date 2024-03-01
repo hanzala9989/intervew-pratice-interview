@@ -1,0 +1,20 @@
+<input type="text" name="userName" id="userName" [(ngModel)]="userFormObject.username"><br>
+<input type="password" name="passwords" id="passwords" [(ngModel)]="userFormObject.password"> <br>
+<input type="checkbox" name="isAdmin" id="isAdmin" (ngModelChange)="isAdminChange($event);">isAdmin <br>
+<input type="submit" (click)="addorupdateData()">
+
+<table>
+    <tr>
+        <th>User Name</th>
+        <th>password</th>
+        <th>Is Admin</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor="let item of userList">
+        <td>{{item.username}}</td>
+        <td>{{item.password}}</td>
+        <td>{{item.isAdmin?'Yes':'No'}}</td>
+        <td> <i class="fas fa-edit" (click)="editUser(item)"></i> &nbsp;
+        <i class="fas fa-trash-alt" (click)="deleteUser(item)"></i></td>
+    </tr>
+</table>
