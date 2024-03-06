@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="card">
+        <div class="card__title">Phone Number</div>
+        <div class="card__content" *ngIf="false">
+            <input type="phone" maxlength="10" name="phoneNumber" id="phoneNumber">
+        </div>
+        <div class="card__content_opt" *ngIf="true" (paste)="onPaste($event)">
+            <input type="text" maxlength="1" (input)="onInputChange(1)" #digit1>
+            <input type="text" maxlength="1" (input)="onInputChange(2)" #digit2>
+            <input type="text" maxlength="1" (input)="onInputChange(3)" #digit3>
+            <input type="text" maxlength="1" (input)="onInputChange(4)" #digit4>
+        </div>
+        <div class="card__footer">
+            <button class="btn" #digit5>Submit</button>
+        </div>
+    </div>
+</div>

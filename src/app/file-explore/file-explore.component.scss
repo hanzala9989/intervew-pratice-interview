@@ -1,0 +1,53 @@
+/* styles.css or your component-specific style file */
+
+.node {
+    margin-left: 10px;
+    width: 400px;
+    /* Adjust margin for indentation */
+}
+
+.root {
+    cursor: pointer;
+    display: block;
+    margin-bottom: 5px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.down__folder {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.child-nodes {
+    margin-left: 10px;
+    /* Adjust margin for indentation of child nodes */
+}
+
+.hide {
+    display: none;
+}
+
+.root:hover {
+    .hide {
+        display: block;
+    }
+}
+
+.input__root{
+    cursor: text;
+    outline: none;
+    border: 1px solid #f1f1f1;
+    font-size: 10px;
+    width: 170px;
+}
+
+.icon_input{
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items:flex-start;
+}

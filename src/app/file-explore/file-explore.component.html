@@ -1,0 +1,27 @@
+<div class="node">
+    <ng-container *ngIf="node">
+        <!-- (click)="openclose(node);" -->
+        <span class="root" *ngIf="node.isfolder" (click)="openclose(node);">
+            {{ folderFlag ? '📁' : '📂' }} {{ node.foldername }}
+            <span class="hide">
+                <i class="fa fa-file-code" (click)="createFolder('file'); $event.stopPropagation();"></i>&nbsp;&nbsp;
+                <i class="fa fa-folder-plus" (click)="createFolder('folder'); $event.stopPropagation();"></i>
+            </span>
+        </span>
+        
+        <span class="down__folder" *ngIf="!node.isfolder">🗃️ {{ node.filename }}</span>
+        <div class="icon_input" *ngIf="createFolderFlag || createFileFlag">
+            {{ !createFolderFlag ? '🗃️' : '📁' }}
+            <input type="text" autofocus class="root input__root" *ngIf="createFolderFlag || createFileFlag"
+                [(ngModel)]="folderName" [placeholder]="createFolderFlag ? 'Enter Foldername' : 'Enter Filename'"
+                (blur)="hide_input();" (keydown.enter)="handleEnterKey(node)">
+        </div>
+    </ng-container>
+
+    <!-- Recursive rendering for child nodes -->
+    <div *ngIf="nodeArray && nodeArray.length > 0" class="child-nodes">
+        <ng-container *ngFor="let child of nodeArray">
+            <app-file-explore [node]="child"></app-file-explore>
+        </ng-container>
+    </div>
+</div>
