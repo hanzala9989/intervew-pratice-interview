@@ -1,6 +1,5 @@
 <div class="node">
     <ng-container *ngIf="node">
-        <!-- (click)="openclose(node);" -->
         <span class="root" *ngIf="node.isfolder" (click)="openclose(node);">
             {{ folderFlag ? '📁' : '📂' }} {{ node.foldername }}
             <span class="hide">

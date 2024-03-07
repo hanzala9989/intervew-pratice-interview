@@ -1,0 +1,21 @@
+<div class="container">
+    <ng-container *ngFor="let item of selectedPillArray">
+        <div class="pill" *ngIf="selectedPillArray && selectedPillArray.length > 0">
+            <div class="pill__container">
+                <img [src]="item.image" alt="no">
+                <span class="pill__label">{{item.name}}</span> &nbsp; <span class="close__btn" (click)="removeItem(item)">&times;</span>
+            </div>
+        </div>
+    </ng-container>
+    <div class="both_input_suggestion">
+        <input type="text" name="hanzala" #hanzalaInput id="hanzala" [(ngModel)]="userInput" (ngModelChange)="onChangeName($event)" (keydown)="onKeyDown($event)" placeholder="enter username ...">
+        <div class="pill__suggestion__screen" *ngIf="responseArray.length !== 0">
+                <div class="pill__container" *ngFor="let item of responseArray" (click)="selectItem(item);">
+                    <img [src]="item.image" alt="no">
+                    <span class="pill__label">{{item.firstName}} &nbsp; {{item.lastName}}</span>
+                </div>
+        </div>
+    </div>
+
+
+</div>

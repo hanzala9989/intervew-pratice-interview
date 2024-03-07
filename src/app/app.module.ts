@@ -9,6 +9,8 @@ import { CountDublicateValueComponent } from './count-dublicate-value/count-dubl
 import { OptScreenComponent } from './opt-screen/opt-screen.component';
 import { FocusNextInputDirective } from './focus-next-input.directive';
 import { FileExploreComponent } from './file-explore/file-explore.component';
+import { SelectedSuggestionComponent } from './selected-suggestion/selected-suggestion.component';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,10 +19,12 @@ import { FileExploreComponent } from './file-explore/file-explore.component';
     CountDublicateValueComponent,
     OptScreenComponent,
     FocusNextInputDirective,
-    FileExploreComponent
+    FileExploreComponent,
+    SelectedSuggestionComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule, 
     AppRoutingModule,
     FormsModule
   ],
