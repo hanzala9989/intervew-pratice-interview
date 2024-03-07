@@ -11,6 +11,7 @@ import { FocusNextInputDirective } from './focus-next-input.directive';
 import { FileExploreComponent } from './file-explore/file-explore.component';
 import { SelectedSuggestionComponent } from './selected-suggestion/selected-suggestion.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { StepperComponent } from './stepper/stepper.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
     OptScreenComponent,
     FocusNextInputDirective,
     FileExploreComponent,
-    SelectedSuggestionComponent
+    SelectedSuggestionComponent,
+    StepperComponent
   ],
   imports: [
     BrowserModule,

@@ -40,7 +40,7 @@ export class OptScreenComponent implements OnInit {
       this.fillAllFields(pastedData);
       event.preventDefault(); // Prevent default paste behavior
     }
-  }
+  } 
 
   private fillAllFields(value: string) {
     this.digit1Input.nativeElement.value = value.charAt(0);

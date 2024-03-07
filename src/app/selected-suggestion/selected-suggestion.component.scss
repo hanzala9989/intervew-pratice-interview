@@ -1,91 +1,91 @@
-.container {
-    margin: 0;
-    padding: 100px;
-    width: 100%;
-    border: 1px solid;
-    height: 140px;
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    gap: 10px;
-}
+// .container {
+//     margin: 0;
+//     padding: 100px;
+//     width: 100%;
+//     border: 1px solid;
+//     height: 140px;
+//     display: flex;
+//     position: relative;
+//     flex-wrap: wrap;
+//     gap: 10px;
+// }
 
-input {
-    outline: none;
-    font-size: 25px;
-    margin-top: 16px;
-    padding: 2px 22px;
-    border: none;
-}
+// input {
+//     outline: none;
+//     font-size: 25px;
+//     margin-top: 16px;
+//     padding: 2px 22px;
+//     border: none;
+// }
 
-.pill {
-    position: relative;
-    width: 20%;
-    height: fit-content;
-    background: black;
-    color: white;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 25px;
+// .pill {
+//     position: relative;
+//     width: 20%;
+//     height: fit-content;
+//     background: black;
+//     color: white;
+//     padding: 10px;
+//     margin-top: 10px;
+//     border-radius: 25px;
 
-    .pill__container {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+//     .pill__container {
+//         display: flex;
+//         justify-content: space-around;
+//         align-items: center;
 
-        img {
-            width: 20px;
-        }
+//         img {
+//             width: 20px;
+//         }
 
-        .close__btn {
-            font-size: 25px;
-            font-weight: bold;
-            color: red;
-            cursor: pointer;
-        }
+//         .close__btn {
+//             font-size: 25px;
+//             font-weight: bold;
+//             color: red;
+//             cursor: pointer;
+//         }
 
-        .pill__label {
-            font-size: 18px;
-        }
-    }
-}
+//         .pill__label {
+//             font-size: 18px;
+//         }
+//     }
+// }
 
-.pill__suggestion__screen {
-    position: relative;
-    border: 1px solid gray;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+// .pill__suggestion__screen {
+//     position: relative;
+//     border: 1px solid gray;
+//     padding: 10px;
+//     margin-top: 10px;
+//     border-radius: 5px;
+//     cursor: pointer;
 
-    .pill__container {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        border-bottom: 1px solid gray;
-        padding: 10px;
+//     .pill__container {
+//         display: flex;
+//         justify-content: start;
+//         align-items: center;
+//         border-bottom: 1px solid gray;
+//         padding: 10px;
 
-        img {
-            width: 20px;
-        }
+//         img {
+//             width: 20px;
+//         }
 
-        .pill__label {
-            margin-left: 25px;
-            font-size: 18px;
-        }
-    }
+//         .pill__label {
+//             margin-left: 25px;
+//             font-size: 18px;
+//         }
+//     }
 
-    width: 250px;
-    height: 500px;
-    border: 1px solid black;
-    background: rgba(224, 255, 255, 0.607);
-    overflow-y: auto;
-    margin-top: 10px;
-    position: relative;
-    left: 25px;
+//     width: 250px;
+//     height: 500px;
+//     border: 1px solid black;
+//     background: rgba(224, 255, 255, 0.607);
+//     overflow-y: auto;
+//     margin-top: 10px;
+//     position: relative;
+//     left: 25px;
 
-    .pill__container:hover{
-        background-color: lightgray;
-        padding: 10px;
-    }
-}
+//     .pill__container:hover{
+//         background-color: lightgray;
+//         padding: 10px;
+//     }
+// }

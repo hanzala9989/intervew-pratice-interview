@@ -1,0 +1,86 @@
+.container {
+    margin: 0;
+    padding: 0;
+    width: 700px;
+    margin: auto;
+}
+
+.stepper__container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+
+    .stepper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+    }
+}
+
+.stepper__number {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+}
+
+.stepper__name {
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.stepper__progressbar {
+    position: relative;
+    border: 5px solid #5cb85c;
+    bottom: 50px;
+
+}
+
+.active {
+    background-color: #2babff;
+
+    .stepper__number {
+        color: #fff;
+    }
+}
+
+.completed {
+    background-color: #5cb85c;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.stepper__button {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    padding: 6px 18px;
+    color: #000;
+    font-size: large;
+}
+
+.component__component {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+
+}
